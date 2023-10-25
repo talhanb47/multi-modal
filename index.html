@@ -1,96 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Event Website</title>
     <style>
         /* Style the navigation bar */
+
+        .centered-heading {
+            text-align: center;
+        }
+
         .navbar {
-            text-align: center; /* Center the text within the navbar */
+            text-align: center;
+            /* Center the text within the navbar */
             background-color: #333;
         }
-        
+
         .navbar a {
-            display: inline-block; /* Display menu items in a horizontal line */
+            display: inline-block;
+            /* Display menu items in a horizontal line */
             font-size: 16px;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
-        
+
         .navbar a:hover {
             background-color: #ddd;
             color: black;
         }
-        
+
         /* Create a container to hold the page content */
         .container {
             padding: 20px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="navbar">
-        <a href="#introduction">Introduction</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#organizers">Organizers</a>
-        <a href="#submissions">Submissions</a>
-        <a href="#registration">Registration</a>
-        <a href="#references">References</a>
-    </div>
-</div>
-
-<div class="container">
-    <div class="centered-heading">
-        <h1>Special Issue Proposal for the IEEE JSTC</h1>
+    <div class="container">
+        <div class="navbar">
+            <a href="#introduction">Introduction</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#organizers">Organizers</a>
+            <a href="#submissions">Submissions</a>
+            <a href="#registration">Registration</a>
+            <a href="#references">References</a>
+        </div>
     </div>
 
-    <div class="centered-heading">
-        <h2>Advances in Deep Neural Network Algorithms and Architectures for Multi-modal Speech Enhancement and Separation</h2>
+    <div class="container">
+        <div class="centered-heading">
+            <h1>Special Issue Proposal for the IEEE JSTC</h1>
+        </div>
+
+        <div class="centered-heading">
+            <h2>Advances in Deep Neural Network Algorithms and Architectures for Multi-modal Speech Enhancement and
+                Separation</h2>
+        </div>
+
+
+        <!-- Your content for each section goes here -->
+        <section id="introduction">
+            <h2>Abstract and Relevance</h2>
+            <p>Voice is the most commonly used modality by humans to communicate and psychologically blend into society.
+                Recent technological advances have triggered the development of various voice-related applications in
+                the information and communications technology market. However, noise, reverberation, and interfering
+                speech are detrimental for effective communications between humans and other humans or machines, leading
+                to performance degradation of associated voice-enabled services. To address the formidable
+                speech-in-noise challenge, a range of speech enhancement (SE) and speech separation (SS) techniques are
+                normally employed as important front-end speech processing units to handle distortions in input signals
+                in order to provide more intelligible speech for automatic speech recognition (ASR), synthesis and
+                dialogue systems.
+                Emerging advances in artificial intelligence (AI) and machine learning, particularly deep neural
+                networks, have led to remarkable improvements in SE and SS based solutions. A growing number of
+                researchers have explored various extensions of these methods by utilising a variety of modalities as
+                auxiliary inputs to the main speech processing task to access additional information from heterogeneous
+                signals. In particular, multi-modal SE and SS systems have been shown to deliver enhanced performance in
+                challenging noisy environments by augmenting the conventional speech modality with complementary
+                information from multi-sensory inputs, such as video, noise type, signal-to-noise ratio (SNR),
+                bone-conducted speech (vibrations), speaker, text information, electromyography, and electromagnetic
+                midsagittal articulometer (EMMA) data. Various integration schemes, including early and late fusions,
+                cross-attention mechanisms, and self-supervised learning algorithms, have also been successfully
+                explored.
+                This timely special issue aims to collate latest advances in multi-modal SE and SS systems that exploit
+                both conventional and unconventional modalities to further improve state-of-the-art performance in
+                benchmark problems. We particularly welcome submissions for novel deep neural network based algorithms
+                and architectures, including new feature processing methods for multimodal and cross-modal speech
+                processing. We also encourage submissions that address practical issues related to multimodal data
+                recording, energy-efficient system design and real-time low-latency solutions, such as for assistive
+                hearing and speech communication applications.
+                .
+            </p>
+            <div style="color: red;">
+                <p>We anticipate that this special issue can make a valuable contribution to the integration with
+                    various subsequent tasks, including
+                    <ol>
+                        <li>Biomedical engineering: assistive hearing technologies </li>
+                        <li>Affective computing: multimodal emotion/pathological recognition</li>
+                        <li>Human-computer interface: multimodal ASR in noise/reverberant conditions. AR/VR: enhanced
+                            speech can provide better quality to AR/VR applications</li>
+                    </ol>
+                    We also hold the view that the outcomes of the special issue exhibit a strong connection with
+                    various other IEEE societies, such as:
+                    <ol>
+                        <li>IEEE Consumer Technology Society (CTSoc): The subject matter can have relevance to practical
+                            applications in consumer electronics. This aspect holds great relevance for IEEE CTSoc.</li>
+                        <li>IEEE Engineering in Medicine and Biology Society (EMBS): Applying this to technologies for
+                            assistive hearing or speech can contribute to the research in the field of biomedical
+                            engineering. This aspect holds great relevance for IEEE EMBS.</li>
+                        <li>IEEE Society for Social Implications of Technology (SSIT): The derived assistive hearing or
+                            speech devices can provide significant contributions to society. This aspect holds great
+                            relevance for IEEE SSIT.</li>
+                    </ol>
+                    IEEE Circuits and Systems Society (CSS): The special issue featured novel model architectures
+                    designed to implement multimodal speech enhancement in real-world applications, considering
+                    computational and time limitations. This aspect holds great relevance for IEEE CSS.
+                </p>
+            </div>
+            <p>Research topics of interest relate to open problems needing addressed. These include, but are not limited
+                to, the following.</p>
+
+            <ul>
+                <li>Novel acoustic features and architectures for multi-modal SE (MM-SE) and multi-modal SS (MM-SS)
+                    solutions. </li>
+                <li>The integration of multiple data acquisition devices for multimodal learning and novel learning
+                    algorithms robust to imperfect data.</li>
+                <li>Few-shot/zero-shot learning and adaptation algorithms for MM-SE and MM-SS systems with a small
+                    amount of training and adaptation data. </li>
+                <li>Self-supervised and unsupervised learning techniques for MM-SE and MM-SS systems.</li>
+                <li>Approaches that effectively reduce model size and inference cost without reducing the speech quality
+                    and intelligibility of processed signals.</li>
+                <li>Novel objective functions that specifically aim to improve speech intelligibility/quality/automatic
+                    speech recognition accuracy. </li>
+                <li>Novel applications of MM-SE and MM-SS in human-human and human-machine communications. </li>
+                <li>Holistic evaluation metrics for MM-SE and MM-SS systems. </li>
+            </ul>
+
+        </section>
+
+        <section id="schedule">
+            <h2>Timeliness</h2>
+            <p>In recent years, a growing number of researchers have attempted to incorporate diverse modalities as
+                auxiliary inputs for SE and SS models to access additional information. Visual clues represent an
+                important modality that carry information complementary to speech signals for everyday communication.
+                For example, the McGurk effect refers to cross-effects between visualized mouth or lip shapes and human
+                hearing perception. From this perspective, numerous audio-visual MM-SE and MM-SS approaches have been
+                proposed.
+                Related work by ASR researchers has also demonstrated the potential of audio-visual speech recognition
+                to improve the noise robustness of speech recognition in the real world (e.g.
+                <a href="https://doi.org/10.1109/TPAMI.2018.2889052">https://doi.org/10.1109/TPAMI.2018.2889052</a>).
+                Such multimodal approaches clearly demonstrate that visual
+                cues can successfully enhance the performance of audio-only speech processing. In addition to visual
+                information, several studies have proposed contextually incorporating speaker and speaking environment
+                modules into SE and SS models. For example, speaking environment information such as SNR and noise types
+                has been used to enhance SE models. Other studies have used speaker identity as prior knowledge for
+                implementing SE or SS systems.
+                A recent timely review of audio-visual based SE and SS approaches was published in the IEEE TASLP, which
+                reported a significant and growing number of influential works
+                (<a href=https://ieeexplore.ieee.org/document/9380418>https://ieeexplore.ieee.org/document/9380418
+                    </a>). Other notable examples of ongoing globally impactful interdisciplinary research in this area
+                    include the UK Engineering and Physical Sciences Research Council (EPSRC) funded multi-million pound
+                    research programme (COG-MHEAR) that is developing real-time cognitively-inspired MM-SE and MM-SS
+                    approaches to transform the next-generation of assistive hearing and speech communication technology
+                    (<a href=http://cogmhear.org>http://cogmhear.org </a>). A related 2023 ICASSP Satellite Workshop was
+                    recently successfully organised on “Advances in multi-modal hearing assistive technologies (AMHAT)”.
+                    This complements the world’s first (second) annual Audio-Visual Speech Enhancement Challenge (AVSEC)
+                    organised as part of the 2023 IEEE ASRU Workshop (<a
+                    href=http://challenge.cogmhear.org>http://challenge.cogmhear.org </a>), and the Speech Enhancement
+                    for Augmented Reality (SPEAR) Challenge (<a
+                    href=https://imperialcollegelondon.github.io/spear-challenge>https://imperialcollegelondon.github.io/spear-challenge
+                    </a>). This special issue aims to solicit the latest research in multi-modal SE and SS approaches
+                    with new benchmark results. We believe it is timely to collate and stimulate new advances in deep
+                    neural network algorithms and architectures for cross-modal and multi-modal learning for major
+                    speech signal processing tasks in real-world applications. </p> </section> <section id="speakers">
+                    <h2>Applications</h2>
+                    <p>The MM-SE and MM-SS topics covered in this proposed special issue span a wide range of
+                        challenging
+                        real-world applications, including the following.</p>
+                    <ul>
+                        <li>Important downstream tasks: automatic speech recognition, speaker and language recognition,
+                            voice
+                            conversion, and speech synthesis. </li>
+                        <li>Assistive listening, visual and multimodal speech communication technologies.</li>
+                        <li>Multimedia processing: multi-modal sentiment analysis, multi-modal dialog systems,
+                            multi-modal
+                            information retrieval.</li>
+                        <li>Cognitive robotics, including more natural, multi-modal human-robot interaction and emerging
+                            AR/VR
+                            applications</li>
+                        <li>Wearable devices such as smart glasses and chatbots as multimodal communication aids
+
+                        </li>
+                    </ul>
+        </section>
+
+        <section id="organizers">
+            <h2>Broad Impact</h2>
+            <p>With recent advances in sensing, computing, and communication technologies, vast amounts of audio, text,
+                and video data can be accessed easily. Significant efforts have been made to combine complementary
+                information from multiple data sources to facilitate improved speech signal processing performance.
+                Notable achievements have been demonstrated for multimodal speech processing systems compared to
+                mono-modal speech processing. This special issue focuses on advanced artificial intelligence models and
+                methods for speech enhancement and separation with heterogeneous data, which we believe will elicit
+                broad interest from various research communities, including in data acquisition, text processing,
+                computer vision, speech, and multimedia processing. In particular, the unique focus of this special
+                issue on cross-modality and multi-modality SE and SS approaches will impact a range of interdisciplinary
+                research areas across speech, hearing and language processing, including for robotics, wearable devices,
+                more natural human-computer interaction and emerging AR/VR applications.</p>
+        </section>
+
+        <section id="submissions">
+            <h2>Cross Communities</h2>
+            <p>The proposed special issue spans several areas of the IEEE SIGNAL PROCESSING SOCIETY. We aim to elicit
+                submissions from multidisciplinary fields, specifically data acquisition, text processing, computer
+                vision, speech, machine learning, model compression, and multimedia processing.</p>
+        </section>
+
+        <section id="registration">
+            <h2>Redundancy</h2>
+            <p>We believe our proposal is the first special issue dedicated to advancing research in MM-SE and MM-SS to
+                address a range of real-world speech-in-noise challenges. This is evidenced by our review of the
+                following related special issues:
+
+                The 2019 IEEE JSTSP Special issue on Far-Field Speech Processing in the Era of Deep Learning” in 2019
+                dealt with speech enhancement and separation but did not include multimodal aspects. Similarly the 2020
+                IEEE JSTSP Special Issue on “Reconstruction of audio from incomplete or highly degraded observations”
+                also dealt with speech enhancement but did not address multimodal aspects. More recently, the 2022 IEEE
+                JSTSP Special Issue on “Self-Supervised Learning for Speech and Audio Processing” dealt with general
+                speech and audio processing applications but did not address multi-modal speech enhancement and
+                separation challenges.
+
+                In the MM context, the 2019 IEEE JSTSP Special Issue on “Deep Learning for Multi-modal Intelligence
+                across Speech, Language, Vision, and Heterogeneous Signals” dealt with general MM intelligence across
+                speech, language and vision applications, and did not focus on MM speech in noise challenges. More
+                recently, the 2022 Special Issue in Language and Cognition (the official journal of the UK Cognitive
+                Linguistics Association published by Cambridge University Press) on "Multimodal prosody: speech and
+                gesture in interaction" focussed on multimodal prosodic aspects but did not address speech enhancement
+                and separation challenges.
+            </p>
+        </section>
+
+        <section id="references">
+            <h2>Potential contributors</h2>
+            <p>Researchers expected to contribute original and tutorial/review papers to the SI are listed below:
+
+                Prof Jesper Jensen and Prof Zheng-Hua Tan, Aalborg University, Denmark
+                Prof Nima Mesgarani, Columbia University, USA
+                Prof Qiang Huang, University of Sunderland, UK
+                Prof Bernd T. Meyer, University of Oldenburgh, Germany
+                Dr Daniel Michelsanti, Oticon, Denmark
+                Prof Dong Yu, Prof Meng Yu and Prof Yong Xu, Tencent AI Lab, USA
+                Dr Peter Derleth, Sonova AG
+                Prof Sabato Marco Siniscalchi, Norwegian University of Science and Technology
+                Prof Jun Du, University of Science and Technology of China (USTC), China
+                Prof Ahsan Adeel, University of Wolverhampton, UK
+                Dr Erfan Loweimi, University of Cambridge, UK
+                Prof Ben Milner, University of East Anglia, UK
+                Prof Jun-Cheng Chen, Academia Sinica, Taiwan
+                Prof Isabel Trancoso, IST, Univ. Lisbon, Portugal
+                Professor Xiao-Lei Zhang, Northwestern Polytechnical University, China
+                Professor Chin-Hui Lee, Georgia Institute of Technology, USA
+                Prof. Haizhou Li, The Chinese University of Hong Kong, China
+                Dr. Gordon Wichern, François G Germain, Sameer Khurana, Chiori Hori, Jonathan LeRoux, Mitsubishi
+                Electric Research Laboratories (MERL)
+                Dr. Yoshiki Masuyama, Tokyo Metropolitan University
+                Prof. Maja Pantic, Imperial College London, UK
+                Prof. Dr Ahsan Adeel, University of Stirling
+                Prof. Qingyao Wu, South China University of Technology
+                Prof. Xinman Zhang, Xi’an Jiaotong University
+                Prof. Hyung-Min Park, Sogang University
+                Dr. Ziyi Yang, Microsoft
+                Prof. Shigeo Morishima, Waseda University
+                Dr. Andrea Lorena Aldana Blanco, University of Edinburgh
+
+
+                A timely review paper from the guest editors is also planned (provisional title: An Overview of Deep
+                Neural Network Based Audio-Visual Speech Enhancement and Separation)
+
+                .</p>
+        </section>
+
+        <section id="references">
+            <h2>Diversity of Guest Editors</h2>
+            <p>1. Technical diversity
+
+                Guest editors include experts in multimodal speech signal processing, machine learning, information
+                fusion, multimedia processing and hearing assistive technology.
+
+                2. Geographical diversity
+
+                The geographical distribution of the proposed guest editors includes Asia, Europe and North America. The
+                Special Issue co-ordinating guest editors are from the UK and Taiwan.
+            </p>
+        </section>
+
+        <section id="references">
+            <h2>Guest editors and their qualifications</h2>
+            <p>(Lead Guest Editor) AMIR HUSSAIN (Senior Member, IEEE) obtained his BEng (1st Class Honours) and PhD from
+                the University of Strathclyde in Glasgow, UK, in 1992 and 1997 respectively. He is Director of the
+                Centre of AI and Robotics at Edinburgh Napier University, UK. His research interests are
+                cross-disciplinary and industry-led, and include a focus on cognitively-inspired multi-modal speech
+                signal processing for assistive hearing and healthcare technologies. He has co-authored around 300
+                journal papers, supervised over 40 PhD students and led major national and international projects. He is
+                currently leading research grants totalling over £5M, including as Chief Investigator of the COG-MHEAR
+                Programme Grant (funded under the UK EPSRC Transformative Healthcare Technologies 2050 Call) that aims
+                to develop truly personalised, multi-modal hearing assistive technology. He is founding Chief Editor of
+                (Springer's) Cognitive Computation journal and is/has been Associate Editor for various other journals
+                including (Elsevier’s) Information Fusion, the IEEE Trans on Neural Networks and Learning Systems, IEEE
+                Trans on Artificial Intelligence, IEEE Trans. on systems, Man Cybernetics: Systems, and IEEE Trans on
+                Emerging Topics in Computational Intelligence. He is founding co-Chair of the UK Special Interest Group
+                on Speech-based Multi-Modal Information Processing (UK-SIGMM), executive committee member of the UK
+                Computing Research Committee (the national expert panel of the IET and BCS for UK computing research).
+                He has served as General Chair of IEEE WCCI 2020 (the world’s largest technical event on computational
+                intelligence, comprising the flagship IJCNN, FUZZ-IEEE and IEEE CEC) and is currently General Chair of
+                the 2023 IEEE Smart World Congress (featuring six co-located IEEE Conferences).
+
+                (co-Lead Guest Editor) YU TSAO (Senior Member, IEEE) received the B.S. and M.S. degrees in electrical
+                engineering from National Taiwan University, Taipei, Taiwan, in 1999 and 2001, respectively, and the
+                Ph.D. degree in electrical and computer engineering from the Georgia Institute of Technology, Atlanta,
+                GA, USA, in 2008. From 2009 to 2011, he was a Researcher with the National Institute of Information and
+                Communications Technology, Tokyo, Japan, where he engaged in research and product development in
+                automatic speech recognition for multilingual speech-to-speech translation. He is currently a Research
+                Fellow (Professor) and the Deputy Director with the Research Center for Information Technology
+                Innovation, Academia Sinica, Taipei. He is also a Jointly Appointed Professor with the Department of
+                Electrical Engineering, Chung Yuan Christian University, Taoyuan, Taiwan. His research interests include
+                assistive oral communication technologies, audio coding, and bio-signal processing. He was the recipient
+                of National Innovation Awards from 2018 to 2021, the Future Tech Breakthrough Award 2019, and the
+                Outstanding Elite Award from the Chung Hwa Rotary Educational Foundation (2019-2020). His papere been
+                awarded the 2021 IEEE Signal Processing Society (SPS), Young Author and Best Paper Awards. He is
+                currently an Associate Editor for the IEEE/ACM Transactions on Audio, Speech and Language Processing and
+                IEEE Signal Processing Letters.
+
+                JOHN H.L. HANSEN (Fellow, IEEE) received Ph.D. & M.S. degrees from Georgia Institute of Technology, and
+                B.S.E.E. degree from Rutgers Univ. He joined Univ. of Texas at Dallas (UTDallas) in 2005, where he is
+                Associate Dean for Research, Professor of Electrical & Computer Engineering, Distinguished Univ. Chair
+                in Telecommunications Engineering, and holds a joint appointment in School of Behavioral & Brain
+                Sciences (Speech & Hearing). At UTDallas, he established the Center for Robust Speech Systems (CRSS). He
+                is an ISCA Fellow, IEEE Fellow, past Member and TC-Chair of IEEE Signal Proc. Society, Speech & Language
+                Proc. Tech. Comm.(SLTC), and Technical Advisor to U.S. Delegate for NATO (IST/TG-01). He served as ISCA
+                President (2018-2021), and currently serves as Treasurer and ISCA Board Member. He has supervised 99
+                PhD/MS thesis candidates (58 PhD, 41 MS/MA), was recipient of 2020 UT-Dallas Provost’s Award for
+                Graduate Research Mentoring, 2005 Univ. Colorado Teacher Recognition Award, and author/co-author of +865
+                journal/conference papers in the field of speech/language/hearing science, processing & technology with
+                machine learning advancements. He served as General Chair for ISCA INTERSPEECH-2002, Co-Chair for ISCA
+                INTERSPEECH-2022, Co-Organizer and Tech. Chair for IEEE ICASSP-2010, and Co-General Chair and Organizer
+                for IEEE Workshop on Spoken Language Technology (SLT-2014) (Lake Tahoe, NV). He is serving as Tech.
+                Chair for IEEE ICASSP-2024. He received the IEEE Signal Processing Society’s Leo Beranek MERITORIOUS
+                SERVICE AWARD in 2021/22 “for exemplary service to and leadership in the Signal Processing Society.”
+
+                NAOMI HARTE is Professor in Speech Technology in the School of Engineering at Trinity College Dublin,
+                Ireland. She is Co-PI and a founding member of the ADAPT SFI Centre. In ADAPT, she has led a major
+                Research Theme centered on Multimodal Interaction involving researchers from Universities across Ireland
+                and was instrumental in developing the future vision for the Centre for 2021-2026. She is also a lead
+                academic of the hugely successful Sigmedia Research Group in the School of Engineering. She was
+                appointed as an SFI Engineering Initiative Lecturer in Digital Media in TCD in 2008 Her research centres
+                around Human Speech Communication. She treats speech as something we both hear and see, with a strong
+                multimodal aspect to her work. Her research involves the design and application of mathematical
+                algorithms to enhance or augment speech communication between humans and technology. Much of that work
+                is underpinned by signal processing and machine learning, but also requires an understanding of how
+                humans interact. Her current research projects include audio-visual speech recognition, speech synthesis
+                evaluation, multimodal speech analysis, and birdsong. Her industrial background brings a real-world
+                approach to her research. Prior to returning to academia, Naomi worked in high-tech start-ups in the
+                field of DSP Systems Development, including her own company. She also previously worked in McMaster
+                University in Canada. She was a Visiting Professor at ICSI in Berkeley in 2015, and became a Fellow of
+                TCD in 2017. She earned a Google Faculty Award in 2018 and was shortlisted for the AI Ireland Awards in
+                2019. She currently serves on the Editorial Board of Computer Speech and Language and Chair of
+                INTERSPEECH 2023.
+
+                SHINJI WATANABE (Fellow, IEEE) is an Associate Professor at Carnegie Mellon University, Pittsburgh, PA.
+                He has been actively working on deep learning based speech enhancement and separation for speech
+                recognition applications, leading to the publication of more than 350 papers in peer-reviewed journals
+                and conferences and receiving several awards. These include the best paper award from the IEEE ASRU in
+                2019 for joint neural modeling of speech separation, beamforming, and speech recognition, which is
+                related to this proposal. He also contributes to community-driven challenge activities, including CHiME
+                speech recognition and separation challenges, which are famous speech processing activities, as an
+                organizer and active participant. He organized two IEEE JSTSP Special issues on Self-Supervised Learning
+                for Speech and Audio Processing and Far-Field Speech Processing in the Era of Deep Learning. He serves
+                as a Senior Area Editor of the IEEE Transactions on Audio Speech and Language Processing. He was/has
+                been a member of several technical committees, including the APSIPA Speech, Language, and Audio
+                Technical Committee (SLA), IEEE Signal Processing Society Speech and Language Technical Committee
+                (SLTC), and Machine Learning for Signal Processing Technical Committee (MLSP).
+
+                MINJE KIM (Senior Member, IEEE) is an Associate Professor at Indiana University, where he leads his
+                research group, Signals and AI Group in Engineering (SAIGE), and is affiliated with Data Science,
+                Cognitive Science, Statistics, Luddy Center for Artificial Intelligence, and the Center for Machine
+                Learning. He is also an Amazon Visiting Academic, working at Amazon Lab126. He earned his Ph.D. in the
+                Dept. of Computer Science at the University of Illinois at Urbana-Champaign. Before joining UIUC, He
+                worked as a researcher at ETRI, a national lab in Korea, from 2006 to 2011. During his career as a
+                researcher, he has focused on developing machine learning models for audio signal processing
+                applications. He is a recipient of various awards, including the NSF Career Award (2021), IU Trustees
+                Teaching Award (2021), the IEEE SPS Best Paper Award (2020), Google and Starkey’s grants for outstanding
+                student papers in ICASSP 2013 and 2014, respectively, and the Richard T. Cheng Endowed Fellowship from
+                UIUC in 2011. He is an IEEE Senior Member and also a member of the IEEE Audio and Acoustic Signal
+                Processing Technical Committee (2018-2023). He is serving as Senior Area Editor for the IEEE/ACM
+                Transactions on Audio, Speech, and Language Processing, Associate Editor for EURASIP Journal of Audio,
+                Speech, and Music Processing, and Consulting Associate Editor for IEEE Open Journal of Signal
+                Processing. He is on more than 60 patents as an inventor.
+            </p>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <p>. D. Michelsanti, Z.-H. Tan, S.-X. Zhang, Y. Xu, M. Yu, D. Yu, and J. Jesper, “An Overview of
+                Deep-Learning-Based Audio-Visual Speech Enhancement and Separation," IEEE/ACM Transactions on Audio,
+                Speech, and Language Processing, vol. 29, pp. 1368-1396, 2021.
+                2. S.-Y. Chuang, H.-M. Wang, and Y. Tsao, “Improved Lite Audio-Visual Speech Enhancement,”IEEE/ACM
+                Transactions on Audio, Speech and Language Processing, vol. 30, pp. 1345-1359, 2022
+                3. J.-C. Hou, S.-S. Wang, Y.-H. Lai, Y. Tsao, H.-W. Chang, and H.-M. Wang, “Audio-visual Speech
+                Enhancement using Multimodal Deep Convolutional Neural Networks,” IEEE Transactions on Emerging Topics
+                in Computational Intelligence, vol. 2(2), pp. 117-128, 2018.
+                4. C. Yu, K.-H. Hung, S.-S. Wang, Y. Tsao, and J.-w. Hung, “Time-Domain Multi-modal Bone/air Conducted
+                Speech Enhancement,” IEEE Signal Processing Letters, vol. 27, pp. 1035-1039, 2020.
+                5. L. A. Passos, J. P. Papa., J. D. Ser. A. Hussain, and A. Adeel, “Multimodal Audio-visual Information
+                Fusion using Canonical-correlated Graph Neural Networks for Energy-efficient Speech Enhancement,”
+                Information Fusion, vol. 90, pp. 1-11, 2023.
+                6. A. Adeel, M. Gogate, A. Hussain, and W. M. Whitmer, “Lip-reading Driven Deep Learning Approach for
+                Speech Enhancement,” IEEE Transactions on Emerging Topics in Computational Intelligence, vol. 5, no. 3,
+                pp. 481-490, 2021
+                7. M. Gogate, K. Dashtipour, and A. Hussain, “CochleaNet: A Robust Language-independent Audio-Visual
+                Model for Speech Enhancement,” Information Fusion, vol. 63, pp. 273-285, 2020.
+                8. J. Reverdy, S. O’Connor Russell, L. Duquenne, D. Garaialde, B. R. Cowan, and N. Harte. “RoomReader: A
+                Multimodal Corpus of Online Multiparty Conversational Interactions,” in Proc. ELRA 2022.
+                9. N. Harte and E. Gillen, “TCD-TIMIT: An Audio-Visual Corpus of Continuous Speech,” IEEE Transactions
+                on Multimedia, vol. 17, no. 5, pp. 603-615, 2015.
+                10. T. Afouras, J. S. Chung, A., O. Vinyals, and A. Zisserman, “Deep Audio-visual Speech Recognition”
+                IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 44(12), pp. 8717-8727, 2018.
+                11. Z. Yu, Z. Yin, D. Zhou, D. Wang, F. Wong, and B. Wang, “Talking Head Generation with Probabilistic
+                Audio-to-visual Diffusion Priors,” in Proc. CVPR 2022.
+                12. J. Richter, S. Frintrop, and T. Gerkmann. “Audio-visual Speech Enhancement with Score-Based
+                Generative Models,” arXiv:2306.01432, 2023.
+                13. Q. Zhu, L. Zhou, Z. Zhang, S. Liu, B. Jiao, J. Zhang, et al., “Vatlm: Visual-audio-text Pre-training
+                With Unified Masked Prediction for Speech Representation Learning,” IEEE Transactions on Multimedia.
+                14. R. Tan, et al. “Language-Guided Audio-visual Source Separation via Trimodal Consistency,” in Proc.
+                CVPR 2023.
+                15. I-C. Chen, et al. “Audio-visual Speech Enhancement and Separation by Utilizing Multi-modal
+                Self-supervised Embeddings,” in Proc. ICASSPW, 2023.
+                16. J.-C. Chou, C.-M. Chien, and K. Livescu, “AV2Wav: Diffusion-Based Re-synthesis from Continuous
+                Self-supervised Features for Audio-Visual Speech Enhancement,” arXiv:2309.08030, 2023.
+                17. Y.-J. Lu, C.-Y. Chang, C. Yu, C.-F. Liu, J.-W. Hung, S. Watanabe, and Y. Tsao, “Improving Speech
+                Enhancement Performance by Leveraging Contextual Broad Phonetic Class Information,” IEEE/ACM
+                Transactions on Audio, Speech, and Language Processing, vol. 31, pp. 2738 – 2750, 2023.
+                18. Y. Li, and X. Zhang, “Lip Landmark-based Audio-visual Speech Enhancement With Multimodal Feature
+                Fusion Network,” Neurocomputing, vol. 549, 2023.
+                19. Xu, Haitao, et al. “A Multi-Scale Feature Aggregation Based Lightweight Network for Audio-Visual
+                Speech Enhancement,” in Proc. ICASSP 2023.
+                20. M. Chu, Y. Ma, Z. Fan, M. Yang, Z. Tao, and D. Wu, “Gmasegan: A Global Multi-Head Attention Speech
+                Enhancement Generative Adversarial Network,” SSRN 4395061.
+                21. L.-C. Chen, et al. “EPG2S: Speech Generation and Speech Enhancement Based on Electropalatography and
+                Audio Signals using Multimodal Learning,” IEEE Signal Processing Letters, vol. 29, pp. 2582-2586, 2022.
+                22. K.-C. Wang, et al. “EMGSE: Acoustic/EMG Fusion for Multimodal Speech Enhancement,” in Proc. ICASSP
+                2022.
+                23. J. W. Hwang, J. Park, R. H. Park, and H. M. Park, “Audio-visual Speech Recognition Based on Joint
+                Training with Audio-visual Speech Enhancement for Robust Speech Recognition,” Applied Acoustics, vol.
+                211, 2023.
+                24. Z. Zhu, H. Yang, M. Tang, Z. Yang, S. E. Eskimez, and H. Wang, “Real-Time Audio-Visual End-To-End
+                Speech Enhancement,” in Proc. ICASSP 2023.
+                25. T. Yoshinaga, K. Tanaka, and S. Morishima, “Audio-Visual Speech Enhancement with Selective
+                Off-Screen Speech Extraction,” arXiv:2306.06495.
+                26. C. Valentini-Botinhao, A. L. A. Blanco, O. Klejch, and P. Bell, “Efficient Intelligibility
+                Evaluation Using Keyword Spotting: A Study on Audio-Visual Speech Enhancement,” in Proc. ICASSP 2023.
+                27. L. A. Passos, et. al., “Multimodal Speech Enhancement using Burst Propagation,” arXiv:2209.03275.
+                28. K. Kinoshita, M. Delcroix, A. Ogawa, and T. Nakatani, “Text-informed Speech Enhancement with Deep
+                Neural Networks,” in Proc. Interspeech 2015.
+                29. J. Wu et al., “Time Domain Audio Visual Speech Separation,” in Proc. ASRU 2019.
+                30. R. Gu, S.-X. Zhang, Y. Xu, L. Chen, Y. Zou, and D. Yu, “Multimodal Multi-channel Target Speech
+                Separation,” IEEE Journal of Selected Topics in Signal Processing, vol. 14, no. 3, pp. 530-541, 2020.
+                31. Y.-L. Chien, H.-H. Chen, M.-C. Yen, S.-W. Tsai, H.-M. Wang, Y. Tsao, and T.-S. Chi, “Audio-Visual
+                Mandarin Electrolaryngeal Speech Voice Conversion,” in Proc. Interspeech 2023.
+                32. C.-F. Liao, Y. Tsao, X. Lu, and H. Kawai, “Incorporating Symbolic Sequential Modeling for Speech
+                Enhancement,” in Proc. Interspeech 2019.
+                33. H. Julien, J. Thomas, Z. Véronique, and B. Éric, “Configurable EBEN: Extreme Bandwidth Extension
+                Network to Enhance Body-conducted Speech Capture,” IEEE/ACM Transactions on Audio, Speech, and Language
+                Processing, in press
+                34. J. Chen, M. Wang, X. L. Zhang, Z. Huang, and S. Rahardja, “End-to-end Multi-modal Speech Recognition
+                with Air and Bone Conducted Speech, in Proc. ICASSP 2022.
+                35. M. Wang, J. Chen, X. Zhang, Z. Huang, and S. Rahardja, “Multi-modal Speech Enhancement with
+                Bone-conducted Speech in Time Domain,” Applied Acoustics, vol 200, 2022.
+                36. H. Wang, X. Zhang, and D. Wang, “Attention-based Fusion for Bone-conducted and Air-conducted Speech
+                Enhancement in the Complex Domain,” in Proc. ICASSP 2022.
+                37. H. Wang, X. Zhang, and D. Wang, “Fusing Bone-Conduction and Air-Conduction Sensors for
+                Complex-Domain Speech Enhancement,” IEEE/ACM Transactions on Audio, Speech, and Language Processing,
+                vol. 30, pp. 3134-3143, 2022.
+                38. Y.-W. Chen, K.-H. Hung, S.-Y. Chuang, J. Sherman, X. Lu, and Y. Tsao, “A study of Incorporating
+                Articulatory Movement Information in Speech Enhancement,” in Proc. EUSIPCO 2021.
+                39. A. Ephrat, I. Mosseri, O. Lang, T. Dekel, K. Wilson, A. Hassidim, W. T. Freeman, and M. Rubinstein.
+                “Looking to Listen at the Cocktail Party: A Speaker-independent Audio-visual Model for Speech
+                Separation,” ACM Transactions on Graphics, vol. 37(4):111, 2018.
+                40. A. Gabbay, A. Shamir, and S. Peleg, “Visual Speech Enhancement,” in Proc. Interspeech 2018.
+                41. M. Liuzzolino and K. Koishida. “AV(se)2: Audio-visual Squeeze-excite Speech Enhancement,” in Proc.
+                ICASSP 2020.
+                42. D. Michelsanti, Z.-H. Tan, S. Sigurdsson, and J. Jensen. “Deep-learning-based Audio-visual Speech
+                Enhancement in the Presence of Lombard Effect,” Speech Communication, vol. 115, pp. 38–50, 2019.
+                43. M. Sadeghi, S. Leglaive, X. Alameda-Pineda, L. Girin, and R. Horaud, “Audio-visual Speech
+                Enhancement using Conditional Variational Auto-encoders,” IEEE/ACM Transactions on Audio, Speech, and
+                Language Processing, vol. 28, pp.1788–1800, 2020.
+
+            </p>
+        </section>
+
+        <section id="references">
+            <h2>Tentative Dates</h2>
+            <p>Manuscript submission due: April 31, 2023
+                First review completed: July 30, 2024
+                Revised manuscript due: October 15, 2024
+                Second review completed: December 30, 2024
+                Final manuscript due: January 31, 2025
+            </p>
+        </section>
     </div>
-
-
-    <!-- Your content for each section goes here -->
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>Place your Introduction content here.</p>
-    </section>
-
-    <section id="schedule">
-        <h2>Schedule</h2>
-        <p>Place your Schedule content here.</p>
-    </section>
-
-    <section id="speakers">
-        <h2>Speakers</h2>
-        <p>Place your Speakers content here.</p>
-    </section>
-
-    <section id="organizers">
-        <h2>Organizers</h2>
-        <p>Place your Organizers content here.</p>
-    </section>
-
-    <section id="submissions">
-        <h2>Submissions</h2>
-        <p>Place your Submissions content here.</p>
-    </section>
-
-    <section id="registration">
-        <h2>Registration</h2>
-        <p>Place your Registration content here.</p>
-    </section>
-
-    <section id="references">
-        <h2>References</h2>
-        <p>Place your References content here.</p>
-    </section>
-</div>
 
 </body>
+
 </html>
