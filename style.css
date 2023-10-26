@@ -103,7 +103,7 @@ h2{
     text-align: center;
     font-family: 'Helvetica';
     background-color: #cecece;
-    position: fixed; 
+    position: fixed;
     width: 100%;
     margin-bottom: 20%;
 }
@@ -118,9 +118,34 @@ h2{
     text-decoration: none;
 }
 
+.navbar-content {
+    display: none;
+}
+
+.navbar a.icon {
+    display: block;
+    font-size: 24px;
+    float: right;
+    padding: 14px 16px;
+}
+
+
 .navbar a:hover {
     color: rgb(117, 115, 115);
     font-weight: bold;
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(56, 55, 55);
+    margin: 3px 0;
 }
 
 /* Create a container to hold the page content */
@@ -170,4 +195,124 @@ h2{
 .bold-list li {
     font-weight: bold; /* Make list items bold */
     margin-bottom: 15px; /* Add space between list items */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Adjust the container width for smaller screens */
+        padding-top: 10%;
+    }
+
+    .person {
+        flex-direction: column; /* Stack photos and descriptions on top of each other for smaller screens */
+        align-items: center;
+    }
+
+    .amir-photo, .john-photo, .naomi-photo, .shi-photo, .kim-photo, .tsao-photo {
+        width: 80px; /* Reduce photo size for smaller screens */
+        height: 80px;
+    }
+}
+
+/* Styles for screens with a maximum width of 480px (adjust this value as needed) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Further adjust the container width for even smaller screens */
+    }
+
+    
+
+    .navbar {
+        font-size: 16px; /* Reduce font size for the navigation menu on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    h1{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%; /* Adjust the container width for smaller screens */
+    }
+
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+    }
+
+    .navbar.responsive .navbar-content {
+        display: block;
+    }
+
+    
+    .navbar.active {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar.active a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    .navbar.active {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar.active a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+    }
+
+    .navbar.responsive .navbar-content {
+        display: block;
+    }
+
+    .navbar.active {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar.active a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 }
