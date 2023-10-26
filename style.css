@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.3;
+}
+
+h2{
+    color: rgb(87, 87, 87);
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Style the oval-shaped photo */
+.amir-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('media/amir.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+.john-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('media/john.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+.naomi-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('media/harte.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+.shi-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('media/shi.jpeg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.kim-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('media/kim.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.tsao-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('media/yutsao.png'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the person description */
+.person-description {
+    margin-left: 20px;
+}
+
+/* Style the heading */
+.person-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Style the description text */
+.person-description p {
+    font-size: 1em;
+}
+
+.centered-heading {
+    color: rgb(87, 87, 87);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.navbar {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Helvetica';
+    background-color: #cecece;
+    position: fixed; 
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.navbar a {
+    display: inline-block;
+    /* Display menu items in a horizontal line */
+    font-size: 20px;
+    color: rgb(88, 87, 87);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(117, 115, 115);
+    font-weight: bold;
+}
+
+/* Create a container to hold the page content */
+.container {
+    font-family: 'Helvetica';
+    text-align: justify;
+    color: rgb(128, 126, 126);
+    width: 50%;
+    padding: 5%;
+    margin: 0 auto; /* Center the container horizontally */
+    
+}
+
+.border {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid rgba(221, 215, 215, 0.5); /* Here, the fourth value (0.5) represents opacity (0.5 or 50%) */
+}
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    background-color:  #dbdbdb77;
+    padding: 20px;
+    border: 1px solid rgba(194, 191, 191, 0.5);
+    border-radius: 20px;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(194, 191, 191, 0.5);
+}
+
+.date {
+    font-weight: bold;
+}
+
+.bold-list {
+    list-style-type: decimal; /* Style of the ordered list */
+}
+
+.bold-list li {
+    font-weight: bold; /* Make list items bold */
+    margin-bottom: 15px; /* Add space between list items */
+}
